@@ -1,8 +1,9 @@
 import { Sequelize } from "sequelize";
 
 const sequelize = new Sequelize({
-	host: "localhost",
+	host: "https://animafarm.onrender.com",
 	dialect: "sqlite",
+	storage:"./database.sqlite3"
 });
 
 const connection = async () => {

@@ -16,7 +16,7 @@ declare module 'express-session' {
         user: any
     }
 }
-
+//
 export const signup = async (req: Request, res: Response) => {
 	try {
 		const { error } = validateUser(req.body);

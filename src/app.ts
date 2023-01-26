@@ -11,9 +11,9 @@ const SequelizeStore = require("connect-session-sequelize")(session.Store);;
 
 
 import indexRouter from "./routes/index";
+//
 
 const app = express();
-
 app.use(cors());
 app.use(logger("dev"));
 app.use(express.json());

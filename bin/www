@@ -28,10 +28,10 @@ const server = http.createServer(app);
 
 server.listen(port, async () => {
 	try {
-		let db = await connection();
-		if (db) {
-			console.log("Connected to the in-memory Sqlite database.");
-		}
+		//let db = await connection();
+		// if (db) {
+		// 	console.log("Connected to the in-memory Sqlite database.");
+		// }
 		console.log("Server is listening on port 3120")
 	} catch (error) {
 		console.log("Error connecting to the Sqlite database", error);
